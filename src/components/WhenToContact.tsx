@@ -13,32 +13,33 @@ const WhenToContact = () => {
 
   return (
     <div className="bg-[#F6E9DD]">
-       <div className="hr-container">
+      <div className="hr-container">
         <hr />
       </div>
-      <div className="section-content pt-12">
-        <h2 className="text-[#8EA37F] text-5xl font-light mb-16">
-          Jsem tu pokud
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 gap-2 mb-16">
-          {items.map((item, index) => (
-            <div 
-              key={index}
-              className="flex items-start gap-4 p-6 bg-white/50 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-2px] group"
-            >
-              <span className="text-[#8EA37F] text-2xl font-light group-hover:scale-125 transition-transform duration-300">•</span>
-              <p className="text-gray-700 text-lg leading-relaxed">{item}</p>
-            </div>
-          ))}
-        </div>
+      <div className="container mx-auto h-full pl-6 pr-16 xl:px-0">
+        <div className="grid grid-cols-1 xl:grid-cols-12 max-w-screen-2xl mx-auto">
+          <div className="xl:col-start-3 xl:col-span-5 w-full xl:w-[calc(5*122px+4*16px)]">
+            <h2 className="text-[#8EA37F] text-[32px] xl:text-[40px] font-light mb-12 xl:mb-16">
+              Jsem tu pokud
+            </h2>
+            
+            <ul className="list-none space-y-3 xl:space-y-4 text-gray-700 text-base leading-[25px] mb-12 xl:mb-16">
+              {items.map((item, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-[#8EA37F] mr-4">•</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
 
-        <Button 
-          variant="primary"
-          href="#contact-form"
-        >
-          Ozvěte se mi
-        </Button>
+            <Button 
+              variant="primary"
+              href="#contact-form"
+            >
+              Ozvěte se mi
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );

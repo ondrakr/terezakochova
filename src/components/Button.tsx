@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
   disabled = false,
   href,
 }) => {
-  const baseStyles = "px-8 py-3 rounded-full transition-all duration-300 font-medium text-lg";
+  const baseStyles = "w-[260px] py-3 rounded-full transition-all duration-300 font-medium text-[18px]";
   
   const variants = {
     primary: "bg-[#8EA37F] text-white hover:bg-[#7a8c6c] disabled:bg-gray-400",

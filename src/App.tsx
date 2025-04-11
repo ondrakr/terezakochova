@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Layout from './components/Layout';
 import Intro from './components/Intro';
 import AboutMe from './components/AboutMe';
 import Consultation from './components/Consultation';
 import WhenToContact from './components/WhenToContact';
 import AboutMeExtended from './components/AboutMeExtended';
 import ContactForm from './components/ContactForm';
-import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
 function App() {
   const [currentSection, setCurrentSection] = useState(0);
-  const totalSections = 6; // Aktualizovaný počet sekcí
+  const totalSections = 6;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,12 +42,11 @@ function App() {
   };
 
   return (
-    <>
-      <Navigation 
-        currentSection={currentSection}
-        totalSections={totalSections}
-        onNavigate={handleNavigation}
-      />
+    <Layout
+      currentSection={currentSection}
+      totalSections={totalSections}
+      onNavigate={handleNavigation}
+    >
       <section id="intro">
         <Intro />
       </section>
@@ -69,7 +68,7 @@ function App() {
       <section id="footer">
         <Footer />
       </section>
-    </>
+    </Layout>
   );
 }
 

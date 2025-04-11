@@ -10,38 +10,44 @@ const Consultation = () => {
   };
 
   return (
-    <div className="bg-[#F6E9DD] pb-12">
-       <div className="hr-container">
+    <div className="bg-[#F6E9DD]">
+      <div className="hr-container">
         <hr />
       </div>
-      <div className="section-content pt-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-32 gap-20 items-center">
+      <div className="container mx-auto h-full pl-6 pr-16 xl:px-0">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-0 max-w-screen-2xl mx-auto">
           {/* Levá strana - Text a ceník */}
-          <div className="space-y-12">
-            <h2 className="text-[#8EA37F] text-5xl font-light">
+          <div className="xl:col-start-3 xl:col-span-5 space-y-8 xl:space-y-12">
+            <h2 className="text-[#8EA37F] text-[32px] xl:text-[40px] font-light">
               Poznejme se
             </h2>
             
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="text-gray-700 text-base leading-[25px]">
               Protože mi na Vaší změně záleží, dáme si na úvod společných 20 minut online schůzku, abychom se poznali. Společně si ujasníme, jaký směr konzultací pro Vás bude vhodný a kde začneme.
             </p>
 
-            <div className="space-y-6">
-              <h3 className="text-xl font-medium text-gray-800">
+            <div className="space-y-4 xl:space-y-6">
+              <h3 className="text-[16px] font-bold">
                 Ceník konzultací (45–60 minut)
               </h3>
               
-              <div className="space-y-3 text-lg text-gray-700">
-                <div className="flex justify-between items-center">
+              <div className="leading-[25px] grid grid-cols-2 w-full xl:w-[380px]">
+                <div className="flex items-center">
                   <span>Konzultace</span>
+                </div>
+                <div className="flex items-center justify-end">
                   <span>1 000 Kč</span>
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="flex items-center">
                   <span>Balíček 5x konzultace</span>
+                </div>
+                <div className="flex items-center justify-end">
                   <span>4 000 Kč</span>
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="flex items-center">
                   <span>Balíček 10x konzultace</span>
+                </div>
+                <div className="flex items-center justify-end">
                   <span>7 000 Kč</span>
                 </div>
               </div>
@@ -53,18 +59,22 @@ const Consultation = () => {
           </div>
 
           {/* Pravá strana - Obrázek a text ZDARMA */}
-          <div className="relative">
+          <div className="xl:col-start-8 xl:col-span-2 relative">
             <img 
               src="/Foto_tereza_kochova_poznejme_se.png"
               alt="Tereza Kochová" 
-              className="w-full rounded-lg"
+              className="w-full max-w-[400px] xl:max-w-none aspect-square object-cover rounded-lg mx-auto"
             />
-            <div className="absolute bottom-0 right-0 transform translate-y-1/2 bg-white p-8 rounded-2xl shadow-xl border border-[#8EA37F]/20">
-              <p className="text-xl font-light text-center text-gray-700">
-                Úvodní online schůzka je
-                <span className="block text-2xl font-medium mt-2 text-[#8EA37F]">
+            <div className="mt-6">
+              <p className="text-center text-bold text-[20px]">
+                Online schůzka je
+                <span className="block text-bold font-medium text-[20px]">
                   ZDARMA
-                  <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-[#8EA37F]/30"></span>
+                  <img 
+                    src="/Underline_icon.svg" 
+                    alt="underline" 
+                    className="mx-auto w-32"
+                  />
                 </span>
               </p>
             </div>
