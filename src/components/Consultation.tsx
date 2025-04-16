@@ -14,7 +14,7 @@ const Consultation = () => {
       <div className="hr-container">
         <hr />
       </div>
-      <div className="container mx-auto h-full px-6 xl:px-0">
+      <div className="container mx-auto h-full  pl-6 pr-16 xl:px-0">
         <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-0 max-w-screen-2xl mx-auto">
           {/* Mobilní a desktop verze */}
           <div className="xl:col-start-3 xl:col-span-5 flex flex-col gap-8 xl:gap-12">
