@@ -47,6 +47,10 @@ const ContactForm = () => {
                   </a>
                 </div>
 
+                <img src="/Ig_icon.png" />
+                <img src="/Whatsapp_icon.png" />
+                <img src="/Mail_icon.png" />
+
                 <div className="flex items-center gap-4">
                   <div className="flex items-center justify-center">
                     <img src="/Ig_icon.png" alt="Instagram" className="w-10 xl:w-12 h-10 xl:h-12" />
