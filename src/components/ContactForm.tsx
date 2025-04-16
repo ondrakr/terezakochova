@@ -31,7 +31,7 @@ const ContactForm = () => {
 
                 <div className="flex items-center gap-4">
                   <div className="flex items-center justify-center">
-                    <img src="/WhatsApp_icon.svg" alt="WhatsApp" className="w-10 xl:w-12 h-10 xl:h-12" />
+                    <img src="/WhatsApp2_icon.svg" alt="WhatsApp" className="w-10 xl:w-12 h-10 xl:h-12" />
                   </div>
                   <a href="#" target="_blank" rel="noopener noreferrer" className="text-base leading-[25px] text-gray-700 hover:text-[#8EA37F] transition-colors">
                     Whatsapp
