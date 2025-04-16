@@ -14,11 +14,13 @@ const Footer: React.FC = () => {
             <span className="text-sm">copyright 2024</span>
           </div>
           <div>
-            <img
-              src="/matfix.png"
-              alt="Matfix"
-              className="h-6 object-contain"
-            />
+            <a href="https://matfix.cz">
+              <img
+                src="/matfix.png"
+                alt="Matfix"
+                className="h-6 object-contain"
+              />
+            </a>
           </div>
         </div>
       </div>

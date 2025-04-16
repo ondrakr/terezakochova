@@ -147,6 +147,24 @@ hr {
     margin-left: -0.7rem;
     margin-bottom: 0;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  /* Zarovnání tlačítek na střed */
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* Zarovnání nadpisů na střed pro mobilní zařízení */
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
 }
 
 

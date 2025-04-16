@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import styles from './NinjaForm.module.css';
 
 const ContactForm = () => {
   return (
@@ -51,7 +51,7 @@ const ContactForm = () => {
                   <div className="flex items-center justify-center">
                     <img src="/Ig_icon.svg" alt="Instagram" className="w-10 xl:w-12 h-10 xl:h-12" />
                   </div>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="text-base leading-[25px] text-gray-700 hover:text-[#8EA37F] transition-colors">
+                  <a href="https://www.instagram.com/tereza_koch" target="_blank" rel="noopener noreferrer" className="text-base leading-[25px] text-gray-700 hover:text-[#8EA37F] transition-colors">
                     Instagram
                   </a>
                 </div>
@@ -62,40 +62,11 @@ const ContactForm = () => {
               Zanechte mi rychlou zprávu, brzy se Vám ozvu :)
             </p>
 
-            <form className="space-y-4 xl:space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 xl:gap-6">
-                <input
-                  type="text"
-                  placeholder="*Jméno"
-                  className="w-full px-4 xl:px-6 py-3 xl:py-4 rounded-full border border-gray-300 bg-transparent text-base leading-[25px]"
-                  required
-                />
-                <input
-                  type="tel"
-                  placeholder="*Telefon"
-                  className="w-full px-4 xl:px-6 py-3 xl:py-4 rounded-full border border-gray-300 bg-transparent text-base leading-[25px]"
-                  required
-                />
-              </div>
-              
-              <input
-                type="email"
-                placeholder="*E-mail"
-                className="w-full px-4 xl:px-6 py-3 xl:py-4 rounded-full border border-gray-300 bg-transparent text-base leading-[25px]"
-                required
-              />
-              
-              <textarea
-                placeholder="Vaše zpráva..."
-                className="w-full px-4 xl:px-6 py-3 xl:py-4 rounded-2xl xl:rounded-3xl border border-gray-300 bg-transparent min-h-[150px] xl:min-h-[200px] text-base leading-[25px]"
-              />
-
-              <div>
-                <Button type="submit" variant="primary" disabled={true}>
-                  Odeslat
-                </Button>
-              </div>
-            </form>
+            <iframe 
+              src="https://cms.tenisdobrouc.cz/kochova-formular"
+              className={styles.formContainer}
+              title="Kontaktní formulář"
+            />
           </div>
         </div>
       </div>

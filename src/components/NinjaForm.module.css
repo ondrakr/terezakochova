@@ -1,0 +1,6 @@
+/* Kontejner pro iframe */
+.formContainer {
+  width: 100%;
+  min-height: 900px;
+  border: 0;
+}
