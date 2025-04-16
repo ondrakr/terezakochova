@@ -40,7 +40,12 @@ const AboutMeExtended = () => {
             </div>
 
             <div className="mt-12 xl:mt-16">
-              <Button variant="primary">
+              <Button 
+                variant="primary"
+                href="https://www.instagram.com/stories/highlights/17962570151866473/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Přečtěte si recenze
               </Button>
             </div>

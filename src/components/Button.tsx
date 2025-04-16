@@ -8,6 +8,8 @@ interface ButtonProps {
   className?: string;
   disabled?: boolean;
   href?: string;
+  target?: string;
+  rel?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -18,6 +20,8 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   disabled = false,
   href,
+  target,
+  rel,
 }) => {
   const baseStyles = "w-[260px] py-3 rounded-full transition-all duration-300 font-medium text-[18px]";
   
@@ -25,6 +29,19 @@ const Button: React.FC<ButtonProps> = ({
     primary: "bg-[#8EA37F] text-white hover:bg-[#7a8c6c] disabled:bg-gray-400",
     secondary: "bg-transparent border-2 border-[#8EA37F] text-[#8EA37F] hover:bg-[#8EA37F] hover:text-white disabled:border-gray-400 disabled:text-gray-400 disabled:hover:bg-transparent"
   };
+
+  if (href && href.startsWith('http')) {
+    return (
+      <a
+        href={href}
+        target={target}
+        rel={rel}
+        className={`${baseStyles} ${variants[variant]} ${className} inline-block text-center`}
+      >
+        {children}
+      </a>
+    );
+  }
 
   const handleClick = (e: React.MouseEvent) => {
     if (href) {
