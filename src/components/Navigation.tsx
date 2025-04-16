@@ -14,7 +14,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection, totalSections, 
 
   return (
     <nav className="fixed h-full flex items-center z-[9999] right-0">
-      <div className="flex flex-col items-center gap-6 mb-2 md:static fixed bottom-4 right-0">
+      <div className="flex flex-col items-center gap-6 mb-16 mr-3 md:static fixed bottom-4 right-0">
         <button 
           onClick={() => onNavigate('up')}
           className="opacity-80 hover:opacity-100 transition-opacity"
